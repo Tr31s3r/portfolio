@@ -14,7 +14,7 @@
 ║   LOCATION    : NRW, Germany                                 ║
 ║   STACK       : HTML / CSS / JavaScript                      ║
 ║   FILE        : index.html — Portfolio / Business Card       ║
-║   VERSION     : 1.0.0                                        ║
+║   VERSION     : 1.1.0                                        ║
 ║   ─────────────────────────────────────────────────────────  ║
 ║   "Brick by Brick until i win"                               ║
 ║                                                              ║
@@ -53,16 +53,30 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+  
+  <!-- HAMBURGER BUTTON-->
+  <button class="nav-burger" id="burger">
+    <span></span><span></span><span></span>
+  </button>
+  
+  <div class="nav-mobile" id="mobileNav">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
 
   <!-- HERO -->
   <section id="hero">
     <div class="hero-grid-bg"></div>
     <div class="hero-counter">001 / IT SPECIALIST — GERMANY</div>
     <h1 class="hero-name">Erik<br><span>Shabanoski</span></h1>
-    <p class="hero-title">IT Support &amp; Helpdesk Specialist &nbsp;·&nbsp; Remote / Hybrid</p>
+    <p class="hero-title">IT Support, IT Web-Engenier, IT Web-Devoloper and Helpdesk Specialist &nbsp;·&nbsp; Remote / Hybrid</p>
     <div class="hero-cta">
       <a href="#contact" class="btn btn-primary">Hire Me</a>
       <a href="#projects" class="btn btn-secondary">See My Work</a>
+      <a href="assets/cv.pdf" class="btn btn-secondary" download="Erik_Shabanoski_CV.pdf">CV</a>
     </div>
     <div class="hero-scroll">
       <span class="scroll-label">Scroll</span>
@@ -76,7 +90,7 @@
     <h2 class="section-title reveal">Who I am.</h2>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm an <strong>IT specialist</strong> based in NRW, Germany — focused on support, helpdesk, and building reliable systems that just work.</p>
+        <p>I'm an <strong>IT specialist</strong> based in NRW, Germany — focused on web-building, support, helpdesk, and building reliable systems that just work.</p>
         <br>
         <p>Background in <strong>ITA (Informationstechnischer Assistent)</strong> with hands-on experience in networking, hardware, and client-facing communication. Fluent in <strong>German, Russian, Ukrainian, Macedonian and English</strong>.</p>
         <br>
@@ -183,6 +197,15 @@
         <div class="exp-badge">Education</div>
       </div>
     </div>
+    <div class="exp-item reveal">
+      <div class="exp-date">2020 — 2023</div>
+      <div>
+        <div class="exp-company">Karlschule Hamm</div>
+        <div class="exp-role">Realschule — Fachoberschulreife (FOR)</div>
+        <div class="exp-desc">Abschluss mit Fachoberschulreife (Realschulabschluss) im Sommer 2023. Grundlagen in Mathematik, Informatik und Naturwissenschaften.</div>
+      </div>
+      <div class="exp-badge">Education</div>
+    </div>
   </section>
 
   <!-- PROJECTS -->
@@ -197,25 +220,25 @@
         <div class="skill-tags" style="margin-bottom:20px">
           <span class="tag">Raspberry Pi</span><span class="tag">WireGuard</span><span class="tag">Pi-hole</span>
         </div>
-        <a href="#" class="project-link">View Details</a>
+        <a href="#" class="project-link" onclick="openModal('homelab'); return false;">View Details</a>
       </div>
       <div class="project-card reveal">
         <div class="project-num">02</div>
         <div class="project-title">This Portfolio</div>
-        <div class="project-desc">Designed and built from scratch. Custom cursor, scroll animations, responsive layout. Zero frameworks — pure HTML, CSS, JS.</div>
+        <div class="project-desc">Designed and built from scratch. Custom cursor, scroll animations, responsive layout. Built with  HTML, CSS, JS.</div>
         <div class="skill-tags" style="margin-bottom:20px">
           <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
         </div>
-        <a href="#" class="project-link">Source Code</a>
+        <a href="https://github.com/Tr31s3r/portfolio" class="project-link">Source Code</a>
       </div>
       <div class="project-card reveal">
         <div class="project-num">03</div>
-        <div class="project-title">Your Next Project</div>
-        <div class="project-desc">Add your real projects here. Web app, script, tool — anything you've actually built. Employers want to see real work, not placeholders.</div>
+        <div class="project-title">In Development</div>
+        <div class="project-desc">Next project currently in progress. Check back soon or follow on GitHub for updates.</div>
         <div class="skill-tags" style="margin-bottom:20px">
-          <span class="tag">TBD</span>
+          <span class="tag">Coming Soon</span>
         </div>
-        <a href="#contact" class="project-link">Let's Work Together</a>
+        <a href="https://github.com/Tr31s3r" target="_blank" class="project-link">Follow on GitHub</a>
       </div>
     </div>
   </section>
@@ -224,15 +247,15 @@
   <section id="contact">
     <p class="section-label reveal">// 006 — Contact</p>
     <h2 class="section-title reveal">Let's talk.</h2>
-    <p class="contact-sub reveal">Available for IT Support, Helpdesk, and Freelance roles — Remote</p>
+    <p class="contact-sub reveal">Available for IT Support, Web-development, Web-Engeniering, Helpdesk, and Freelance roles — Remote</p>
     <div class="contact-links reveal">
       <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
         <span>↗</span> LinkedIn
       </a>
-      <a href="https://github.com/yourprofile" target="_blank" class="contact-link">
+      <a href="https://github.com/Tr31s3r" target="_blank" class="contact-link">
         <span>↗</span> GitHub
       </a>
-      <a href="tel:+49XXXXXXXXX" class="contact-link">
+      <a href="tel:+4917646079079" class="contact-link">
         <span>📞</span> +49 17646079079
       </a>
     </div>
@@ -245,5 +268,46 @@
     <div class="footer-built">BUILT WITH <span>HTML / CSS / JS</span></div>
   </footer>
   <script src="js/main.js"></script>
+
+  <!-- POPUP -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-box" id="popupBox">
+    <div class="popup-label">// INCOMING MESSAGE</div>
+    <h2 class="popup-title">Ready to meet<br><span>your best hire?</span></h2>
+    <p class="popup-text">My name is Erik Shabanoski — IT Support Specialist and Web Developer based in NRW, Germany. I don't wait for problems to escalate. I communicate clearly, adapt fast, and deliver results whether it's fixing a critical system issue at 2AM or shipping a clean interface under a tight deadline. I speak 5 languages, I work remote or hybrid, and I'm ready to contribute from day one. Take a look around — everything you need to make a decision is right here.</p>
+    <button class="popup-btn" id="popupAccept">Enter Portfolio →</button>
+  </div>
+</div>
+
+<!-- PROJECT01 MODALS -->
+<div class="modal-overlay" id="modal-homelab">
+  <div class="modal-box">
+    <div class="popup-label">// PROJECT 01</div>
+    <h2 class="modal-title">Home Network<br><span>Security Stack</span></h2>
+    <div class="modal-body">
+      <p>Deployed a full home network security stack on a <strong>Raspberry Pi 4</strong> to protect all devices from ads, trackers, and external threats.</p>
+      <br>
+      <p><strong>What I built:</strong></p>
+      <ul>
+        <li>› Pi-hole — network-wide DNS ad blocker, blocking 100k+ domains</li>
+        <li>› PiVPN with WireGuard — encrypted VPN tunnel for remote access</li>
+        <li>› Quad9 DNS — privacy-focused upstream DNS resolver</li>
+        <li>› Configured on FRITZ!Box 7530 AX via 1&1 ISP</li>
+      </ul>
+      <br>
+      <p><strong>Result:</strong> 30–40% of all DNS requests blocked. Full encrypted remote access from any device, anywhere.</p>
+      <br>
+      <div class="modal-tags">
+        <span class="tag">Raspberry Pi</span>
+        <span class="tag">WireGuard</span>
+        <span class="tag">Pi-hole</span>
+        <span class="tag">DNS</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Networking</span>
+      </div>
+    </div>
+    <button class="popup-btn" onclick="closeModal('homelab')">Got it →</button>
+  </div>
+</div>
 </body>
 </html>

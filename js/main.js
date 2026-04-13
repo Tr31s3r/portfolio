@@ -33,3 +33,69 @@
       });
     }, { threshold: 0.12 });
     reveals.forEach(el => obs.observe(el));
+    
+    //ADAPTATION
+    const burger = document.getElementById('burger');
+const mobileNav = document.getElementById('mobileNav');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  mobileNav.classList.toggle('open');
+});
+
+document.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('open');
+    mobileNav.classList.remove('open');
+  });
+});
+
+// POPUP
+document.addEventListener('DOMContentLoaded', () => {
+  const overlay = document.getElementById('popupOverlay');
+  const acceptBtn = document.getElementById('popupAccept');
+
+  if (!localStorage.getItem('popupSeen')) {
+    overlay.style.display = 'flex';
+  } else {
+    overlay.style.display = 'none';
+  }
+
+  if (acceptBtn && overlay) {
+    acceptBtn.addEventListener('click', () => {
+      localStorage.setItem('popupSeen', 'true'); // to save a popup aceptation
+      overlay.style.transition = 'opacity 0.6s ease, backdrop-filter 0.6s ease, -webkit-backdrop-filter 0.6s ease';
+      overlay.style.opacity = '0';
+      overlay.style.backdropFilter = 'blur(0px)';
+      overlay.style.webkitBackdropFilter = 'blur(0px)';
+      overlay.style.pointerEvents = 'none';
+      setTimeout(() => overlay.style.display = 'none', 600);
+    });
+  }
+});
+
+// PROJECT MODALS
+function openModal(id) {
+  const modal = document.getElementById('modal-' + id);
+  if (modal) {
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+function closeModal(id) {
+  const modal = document.getElementById('modal-' + id);
+  if (modal) {
+    modal.style.backdropFilter = 'blur(0px)';
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+// Close on overlay click
+document.querySelectorAll('.modal-overlay').forEach(modal => {
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+});

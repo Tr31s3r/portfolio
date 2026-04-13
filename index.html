@@ -14,28 +14,46 @@
 ║   LOCATION    : NRW, Germany                                 ║
 ║   STACK       : HTML / CSS / JavaScript                      ║
 ║   FILE        : index.html — Portfolio / Business Card       ║
-║   VERSION     : 1.1.0                                        ║
+║   VERSION     : 1.2.0                                        ║
 ║   ─────────────────────────────────────────────────────────  ║
 ║   "Brick by Brick until i win"                               ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
 -->
 
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Erik Shabanoski — IT Support Specialist</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Primary Meta -->
+  <title>Erik Shabanoski — IT Support & Web Developer</title>
+  <meta name="description" content="Portfolio of Erik Shabanoski — IT Support specialist and web developer based in Hamm, Germany. HTML, CSS, JavaScript, networking and security." />
+  <meta name="author" content="Erik Shabanoski" />
+  <meta name="keywords" content="Erik Shabanoski, IT Support, Web Developer, Hamm, JavaScript, HTML, CSS, Portfolio" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tr31s3r.github.io/portfolio/" />
+  <meta property="og:title" content="Erik Shabanoski — IT Support & Web Developer" />
+  <meta property="og:description" content="IT Support specialist and web developer based in Hamm, Germany. Check out my projects and experience." />
+  <meta property="og:image" content="https://tr31s3r.github.io/portfolio/assets/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://tr31s3r.github.io/portfolio/" />
+  <meta name="twitter:title" content="Erik Shabanoski — IT Support & Web Developer" />
+  <meta name="twitter:description" content="IT Support specialist and web developer based in Hamm, Germany. Check out my projects and experience." />
+  <meta name="twitter:image" content="https://tr31s3r.github.io/portfolio/assets/og-image.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -53,12 +71,12 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  
-  <!-- HAMBURGER BUTTON-->
-  <button class="nav-burger" id="burger">
+
+  <!-- HAMBURGER -->
+  <button class="nav-burger" id="burger" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
-  
+
   <div class="nav-mobile" id="mobileNav">
     <a href="#about" class="mobile-link">About</a>
     <a href="#skills" class="mobile-link">Skills</a>
@@ -72,7 +90,7 @@
     <div class="hero-grid-bg"></div>
     <div class="hero-counter">001 / IT SPECIALIST — GERMANY</div>
     <h1 class="hero-name">Erik<br><span>Shabanoski</span></h1>
-    <p class="hero-title">IT Support, IT Web-Engenier, IT Web-Devoloper and Helpdesk Specialist &nbsp;·&nbsp; Remote / Hybrid</p>
+    <p class="hero-title">IT Support · Web Engineer · Web Developer · Helpdesk Specialist &nbsp;·&nbsp; Remote / Hybrid</p>
     <div class="hero-cta">
       <a href="#contact" class="btn btn-primary">Hire Me</a>
       <a href="#projects" class="btn btn-secondary">See My Work</a>
@@ -90,7 +108,7 @@
     <h2 class="section-title reveal">Who I am.</h2>
     <div class="about-grid">
       <div class="about-text reveal">
-        <p>I'm an <strong>IT specialist</strong> based in NRW, Germany — focused on web-building, support, helpdesk, and building reliable systems that just work.</p>
+        <p>I'm an <strong>IT specialist</strong> based in NRW, Germany — focused on web development, support, helpdesk, and building reliable systems that just work.</p>
         <br>
         <p>Background in <strong>ITA (Informationstechnischer Assistent)</strong> with hands-on experience in networking, hardware, and client-facing communication. Fluent in <strong>German, Russian, Ukrainian, Macedonian and English</strong>.</p>
         <br>
@@ -123,7 +141,7 @@
     <h2 class="section-title reveal">What I bring.</h2>
     <div class="skills-grid">
       <div class="skill-card reveal">
-        <div class="skill-icon">🖥</div>
+        <div class="skill-icon" aria-hidden="true">🖥</div>
         <div class="skill-name">IT Support</div>
         <div class="skill-desc">Hardware troubleshooting, OS installation, driver management, remote desktop support.</div>
         <div class="skill-tags">
@@ -131,7 +149,7 @@
         </div>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">🌐</div>
+        <div class="skill-icon" aria-hidden="true">🌐</div>
         <div class="skill-name">Networking</div>
         <div class="skill-desc">Router/switch config, VPN setup (WireGuard), DNS, FRITZ!Box, Pi-hole.</div>
         <div class="skill-tags">
@@ -139,7 +157,7 @@
         </div>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">💻</div>
+        <div class="skill-icon" aria-hidden="true">💻</div>
         <div class="skill-name">Web Development</div>
         <div class="skill-desc">Front-end development with clean semantic code. Real projects shipped.</div>
         <div class="skill-tags">
@@ -147,7 +165,7 @@
         </div>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">🔒</div>
+        <div class="skill-icon" aria-hidden="true">🔒</div>
         <div class="skill-name">Security Basics</div>
         <div class="skill-desc">Home lab security stack, VPN configuration, password management, privacy tools.</div>
         <div class="skill-tags">
@@ -155,7 +173,7 @@
         </div>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">⌨️</div>
+        <div class="skill-icon" aria-hidden="true">⌨️</div>
         <div class="skill-name">Programming</div>
         <div class="skill-desc">C, Java — algorithms, data structures, scripting. Microsoft Office suite, advanced Excel.</div>
         <div class="skill-tags">
@@ -163,7 +181,7 @@
         </div>
       </div>
       <div class="skill-card reveal">
-        <div class="skill-icon">🗣</div>
+        <div class="skill-icon" aria-hidden="true">🗣</div>
         <div class="skill-name">Communication</div>
         <div class="skill-desc">Client-facing experience from sales. Clear, direct, multilingual. Works under pressure.</div>
         <div class="skill-tags">
@@ -196,15 +214,16 @@
         </div>
         <div class="exp-badge">Education</div>
       </div>
+      <div class="exp-item reveal">
+        <div class="exp-date">2020 — 2023</div>
+        <div>
+          <div class="exp-company">Karlschule Hamm</div>
+          <div class="exp-role">Secondary School — Realschulabschluss</div>
+          <div class="exp-desc">Completed secondary school with a Realschulabschluss in 2023. Core subjects: Mathematics, Computer Science, and Natural Sciences.</div>
+        </div>
+        <div class="exp-badge">Education</div>
+      </div>
     </div>
-    <div class="exp-item reveal">
-      <div class="exp-date">2020 — 2023</div>
-      <div>
-        <div class="exp-company">Karlschule Hamm</div>
-        <div class="exp-role">Secondary School — Realschulabschluss</div>
-        <div class="exp-desc">Completed secondary school with a Realschulabschluss (equivalent to GCSE level) in summer 2023. Core subjects: Mathematics, Computer Science, and Natural Sciences.</div>
-    </div>
-    <div class="exp-badge">Education</div>
   </section>
 
   <!-- PROJECTS -->
@@ -224,11 +243,11 @@
       <div class="project-card reveal">
         <div class="project-num">02</div>
         <div class="project-title">This Portfolio</div>
-        <div class="project-desc">Designed and built from scratch. Custom cursor, scroll animations, responsive layout. Built with  HTML, CSS, JS.</div>
+        <div class="project-desc">Designed and built from scratch. Custom cursor, scroll animations, responsive layout. Built with HTML, CSS, JS.</div>
         <div class="skill-tags" style="margin-bottom:20px">
           <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
         </div>
-        <a href="https://github.com/Tr31s3r/portfolio" class="project-link">Source Code</a>
+        <a href="https://github.com/Tr31s3r/portfolio" target="_blank" rel="noopener noreferrer" class="project-link">Source Code</a>
       </div>
       <div class="project-card reveal">
         <div class="project-num">03</div>
@@ -237,7 +256,7 @@
         <div class="skill-tags" style="margin-bottom:20px">
           <span class="tag">Coming Soon</span>
         </div>
-        <a href="https://github.com/Tr31s3r" target="_blank" class="project-link">Follow on GitHub</a>
+        <a href="https://github.com/Tr31s3r" target="_blank" rel="noopener noreferrer" class="project-link">Follow on GitHub</a>
       </div>
     </div>
   </section>
@@ -246,19 +265,19 @@
   <section id="contact">
     <p class="section-label reveal">// 006 — Contact</p>
     <h2 class="section-title reveal">Let's talk.</h2>
-    <p class="contact-sub reveal">Available for IT Support, Web-development, Web-Engeniering, Helpdesk, and Freelance roles — Remote</p>
+    <p class="contact-sub reveal">Available for IT Support, Web Development, Web Engineering, Helpdesk, and Freelance roles — Remote</p>
     <div class="contact-links reveal">
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-link">
+      <a href="https://linkedin.com/in/erik-shabanoski" target="_blank" rel="noopener noreferrer" class="contact-link">
         <span>↗</span> LinkedIn
       </a>
-      <a href="https://github.com/Tr31s3r" target="_blank" class="contact-link">
+      <a href="https://github.com/Tr31s3r" target="_blank" rel="noopener noreferrer" class="contact-link">
         <span>↗</span> GitHub
       </a>
       <a href="tel:+4917646079079" class="contact-link">
         <span>📞</span> +49 17646079079
       </a>
     </div>
-    <a href="mailto:your@email.com" class="contact-email reveal">erikshabanoski@proton.com</a>
+    <a href="mailto:erikshabanoski@proton.me" class="contact-email reveal">erikshabanoski@proton.me</a>
   </section>
 
   <!-- FOOTER -->
@@ -266,47 +285,49 @@
     <div class="footer-copy">© 2026 ERIK SHABANOSKI — ALL RIGHTS RESERVED</div>
     <div class="footer-built">BUILT WITH <span>HTML / CSS / JS</span></div>
   </footer>
+
   <script src="js/main.js"></script>
 
   <!-- POPUP -->
-<div class="popup-overlay" id="popupOverlay">
-  <div class="popup-box" id="popupBox">
-    <div class="popup-label">// INCOMING MESSAGE</div>
-    <h2 class="popup-title">Ready to meet<br><span>your best hire?</span></h2>
-    <p class="popup-text">My name is Erik Shabanoski — IT Support Specialist and Web Developer based in NRW, Germany. I don't wait for problems to escalate. I communicate clearly, adapt fast, and deliver results whether it's fixing a critical system issue at 2AM or shipping a clean interface under a tight deadline. I speak 5 languages, I work remote or hybrid, and I'm ready to contribute from day one. Take a look around — everything you need to make a decision is right here.</p>
-    <button class="popup-btn" id="popupAccept">Enter Portfolio →</button>
-  </div>
-</div>
-
-<!-- PROJECT01 MODALS -->
-<div class="modal-overlay" id="modal-homelab">
-  <div class="modal-box">
-    <div class="popup-label">// PROJECT 01</div>
-    <h2 class="modal-title">Home Network<br><span>Security Stack</span></h2>
-    <div class="modal-body">
-      <p>Deployed a full home network security stack on a <strong>Raspberry Pi 4</strong> to protect all devices from ads, trackers, and external threats.</p>
-      <br>
-      <p><strong>What I built:</strong></p>
-      <ul>
-        <li>› Pi-hole — network-wide DNS ad blocker, blocking 100k+ domains</li>
-        <li>› PiVPN with WireGuard — encrypted VPN tunnel for remote access</li>
-        <li>› Quad9 DNS — privacy-focused upstream DNS resolver</li>
-        <li>› Configured on FRITZ!Box 7530 AX via 1&1 ISP</li>
-      </ul>
-      <br>
-      <p><strong>Result:</strong> 30–40% of all DNS requests blocked. Full encrypted remote access from any device, anywhere.</p>
-      <br>
-      <div class="modal-tags">
-        <span class="tag">Raspberry Pi</span>
-        <span class="tag">WireGuard</span>
-        <span class="tag">Pi-hole</span>
-        <span class="tag">DNS</span>
-        <span class="tag">Linux</span>
-        <span class="tag">Networking</span>
-      </div>
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box" id="popupBox">
+      <div class="popup-label">// INCOMING MESSAGE</div>
+      <h2 class="popup-title">Ready to meet<br><span>your best hire?</span></h2>
+      <p class="popup-text">My name is Erik Shabanoski — IT Support Specialist and Web Developer based in NRW, Germany. I don't wait for problems to escalate. I communicate clearly, adapt fast, and deliver results whether it's fixing a critical system issue at 2AM or shipping a clean interface under a tight deadline. I speak 5 languages, I work remote or hybrid, and I'm ready to contribute from day one. Take a look around — everything you need to make a decision is right here.</p>
+      <button class="popup-btn" id="popupAccept">Enter Portfolio →</button>
     </div>
-    <button class="popup-btn" onclick="closeModal('homelab')">Got it →</button>
   </div>
-</div>
+
+  <!-- MODAL — PROJECT 01 -->
+  <div class="modal-overlay" id="modal-homelab">
+    <div class="modal-box">
+      <div class="popup-label">// PROJECT 01</div>
+      <h2 class="modal-title">Home Network<br><span>Security Stack</span></h2>
+      <div class="modal-body">
+        <p>Deployed a full home network security stack on a <strong>Raspberry Pi 4</strong> to protect all devices from ads, trackers, and external threats.</p>
+        <br>
+        <p><strong>What I built:</strong></p>
+        <ul>
+          <li>Pi-hole — network-wide DNS ad blocker, blocking 100k+ domains</li>
+          <li>PiVPN with WireGuard — encrypted VPN tunnel for remote access</li>
+          <li>Quad9 DNS — privacy-focused upstream DNS resolver</li>
+          <li>Configured on FRITZ!Box 7530 AX via 1&1 ISP</li>
+        </ul>
+        <br>
+        <p><strong>Result:</strong> 30–40% of all DNS requests blocked. Full encrypted remote access from any device, anywhere.</p>
+        <br>
+        <div class="modal-tags">
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">WireGuard</span>
+          <span class="tag">Pi-hole</span>
+          <span class="tag">DNS</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Networking</span>
+        </div>
+      </div>
+      <button class="popup-btn" onclick="closeModal('homelab')">Got it →</button>
+    </div>
+  </div>
+
 </body>
 </html>
